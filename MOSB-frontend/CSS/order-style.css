@@ -1,0 +1,186 @@
+body {
+    overflow: hidden;
+    background-color: #fdf6f1;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.navbar {
+    height: 60px;
+    border-bottom: 1px solid #f4a261;
+    background-color: #fae5c7;
+}
+
+.navbar-brand-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+
+.main-container {
+    height: calc(100vh - 60px);
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.menu-section {
+    background: white;
+    background-color: #fff8e6 !important;
+    border-style: groove;
+    border-color: #f4a261;
+    border-radius: 15px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-items-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0 1rem;
+}
+
+.order-section {
+    background: white;
+    border-radius: 15px;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    background-color: #fff8e6 !important;
+    border-style: groove;
+    border-color: #f4a261;
+}
+
+.order-details-container {
+    flex: 1;
+    overflow-y: auto;
+}
+
+#selectedItems {
+    overflow-y: auto;
+    max-height: 40vh;
+    margin-bottom: 1rem;
+}
+
+.category-btn {
+    border: none;
+    background: none;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 8px;
+    color: #666;
+    font-weight: 500;
+}
+
+.category-btn img {
+    border-radius: 35px;
+}
+
+.category-btn.active {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.category-btn:hover {
+    background-color: #e9ecef;
+}
+
+.menu-item {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+}
+
+.menu-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.search-bar {
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+}
+
+.search-bar:focus {
+    border-color: #ffc107;
+}
+
+.customer-input {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+}
+
+.customer-input:focus {
+    border-color: #ffc107;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background: #ffc107;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.checkout-btn:hover {
+    background: #ffb300;
+}
+
+/* Customize scrollbar */
+#menuItems::-webkit-scrollbar,
+#selectedItems::-webkit-scrollbar {
+    width: 6px;
+}
+
+#menuItems::-webkit-scrollbar-thumb,
+#selectedItems::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+#menuItems::-webkit-scrollbar-track,
+#selectedItems::-webkit-scrollbar-track {
+    background-color: #f8f9fa;
+}
+
+.customer-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.customer-modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.customer-info-icon {
+    cursor: pointer;
+    color: #ffc107;
+    margin-left: 0.5rem;
+}
+
+.customer-info-icon:hover {
+    color: #e0a800;
+}
